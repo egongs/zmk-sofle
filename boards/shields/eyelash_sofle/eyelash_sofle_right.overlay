@@ -31,3 +31,11 @@
 &default_transform {
     col-offset = <7>;
 };
+
+&pro_micro_i2c {
+    cirque_trackpad: trackpad@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "disabled";
+    };
+};
