@@ -32,19 +32,3 @@
     col-offset = <7>;
 };
 
-&pro_micro_i2c {
-    status = "okay";
-
-    cirque_trackpad: pinnacle@2a {
-        compatible = "cirque,pinnacle";
-        reg = <0x2a>;
-        status = "okay";
-    };
-};
-
-/ {
-    trackpad_listener {
-        compatible = "zmk,input-listener";
-        device = <&cirque_trackpad>;
-    };
-};
