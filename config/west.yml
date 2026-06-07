@@ -10,6 +10,8 @@ manifest:
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
   #  - name: gpeye
   #    url-base: https://github.com/GPeye
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     # - name: mario-peripheral-animation
     #   remote: gpeye
@@ -36,5 +38,8 @@ manifest:
     - name: zmk-module-runtime-input-processor
       remote: cormoran
       revision: zmk-v0.3.0.0
+    - name: cirque-input-module
+      remote: petejohanson
+      revision: main
   self:
     path: config
