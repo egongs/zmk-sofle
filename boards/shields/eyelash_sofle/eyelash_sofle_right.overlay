@@ -39,5 +39,6 @@
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "okay";
+        input-mode = "relative";
     };
 };
