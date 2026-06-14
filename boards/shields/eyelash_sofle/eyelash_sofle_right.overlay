@@ -31,15 +31,16 @@
 &default_transform {
     col-offset = <7>;
 };
+
 &pinctrl {
-    i2c0_default: i2c0_default {
+    trackpad_i2c_default: trackpad_i2c_default {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
                     <NRF_PSEL(TWIM_SCL, 0, 20)>;
         };
     };
 
-    i2c0_sleep: i2c0_sleep {
+    trackpad_i2c_sleep: trackpad_i2c_sleep {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
                     <NRF_PSEL(TWIM_SCL, 0, 20)>;
@@ -47,29 +48,11 @@
         };
     };
 };
-
-&pinctrl {
-    i2c0_default: i2c0_default {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 20)>;
-        };
-    };
-
-    i2c0_sleep: i2c0_sleep {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 20)>;
-            low-power-enable;
-        };
-    };
-};
-
 
 &pro_micro_i2c {
     status = "okay";
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-0 = <&trackpad_i2c_default>;
+    pinctrl-1 = <&trackpad_i2c_sleep>;
     pinctrl-names = "default", "sleep";
 
     cirque_trackpad: trackpad@2a {
