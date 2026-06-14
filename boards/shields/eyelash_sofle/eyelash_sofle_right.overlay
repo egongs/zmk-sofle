@@ -32,4 +32,7 @@
     col-offset = <7>;
 };
 
-
+&i2c0 {
+    compatible = "nordic,nrf-twim";
+    status = "okay";
+};
