@@ -35,8 +35,8 @@
 &i2c0 {
     status = "okay";
     cirque_trackpad: trackpad@2a {
-        compatible = "cirque,pinnacle-i2c";
-        reg = <0x2c>;
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
         status = "okay";
     };
 };
