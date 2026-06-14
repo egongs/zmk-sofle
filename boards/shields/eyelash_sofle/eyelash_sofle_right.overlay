@@ -32,6 +32,9 @@
     col-offset = <7>;
 };
 
+&nice_view {
+    status = "disabled";
+};
 
 &pinctrl {
     trackpad_i2c_default: trackpad_i2c_default {
@@ -63,3 +66,4 @@
         status = "okay";
     };
 };
+
