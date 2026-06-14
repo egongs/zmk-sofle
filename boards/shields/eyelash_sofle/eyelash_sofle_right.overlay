@@ -32,10 +32,6 @@
     col-offset = <7>;
 };
 
-&nice_view {
-    status = "disabled";
-};
-
 &spi0 {
     status = "disabled";
 };
