@@ -33,12 +33,10 @@
 };
 
 &i2c0 {
-    compatible = "nordic,nrf-twim";
     status = "okay";
     cirque_trackpad: trackpad@2a {
-        compatible = "cirque,pinnacle";
+        compatible = "cirque,pinnacle-i2c";
         reg = <0x2a>;
         status = "okay";
-        input-mode = "relative";
     };
 };
