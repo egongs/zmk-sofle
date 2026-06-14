@@ -36,6 +36,5 @@
     cirque_trackpad: trackpad@2a {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
-        status = "okay";
     };
 };
