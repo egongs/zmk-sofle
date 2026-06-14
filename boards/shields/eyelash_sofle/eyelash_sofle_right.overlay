@@ -33,12 +33,3 @@
 };
 
 
-&i2c0 {
-    compatible = "nordic,nrf-twim";
-    status = "okay";
-
-    cirque_trackpad: trackpad@2a {
-        
-    };
-};
-
